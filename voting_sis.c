@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+//THIS CODE IS DEVELOPED BY AVIJIT ROY
+//UPDATED 07/07/2022 :-)
+
 int leading(int *a,int *b, int *c, int *d){
   char le[] = {*a,*b,*c,*d};
   int re;
@@ -16,10 +19,10 @@ int leading(int *a,int *b, int *c, int *d){
     c1++;
     i += 1;
   }
-  printf("_#_#_#_LEADING BORD_#_#_#_");
-  printf("\n\n\nTEAM %c is in leading..",d1);
-  printf("\n\n\n1.HOME\n2.EXIT");
-  printf("\nENTER YOUR CHOICE: ");
+  printf("\t\t\t_#_#_#_LEADING BORD_#_#_#_");
+  printf("\n\n\n\t\t\t\tTEAM %c is in leading..",d1);
+  printf("\n\n\t\t\t1.HOME\n\n\t\t\t2.EXIT");
+  printf("\n\n\t\t\tENTER YOUR CHOICE: ");
   scanf("%d",&re);
   system("cls");
   return re;
@@ -28,14 +31,16 @@ int leading(int *a,int *b, int *c, int *d){
 
 
 int stati(int *a,int *b, int *c, int *d){
-  printf("___##########_  statictics of all votes_##########___");
   int re;
-  printf("\nA  - %d",*a);
-  printf("\nB  - %d",*b);
-  printf("\nC  - %d",*c);
-  printf("\nD  - %d",*d);
-  printf("\n\n\n1.HOME\n2.EXIT");
-  printf("\nENTER YOUR CHOICE: ");
+  printf("\t\t\t___##########_  statictics of all votes_##########___");
+  printf("\n\n\t\t\t\t\t#####################");
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\tA  - %d      #",*a);
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\tB  - %d      #",*b);
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\tC  - %d      #",*c);
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\tD  - %d      #",*d);
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#####################");
+  printf("\n\n\t\t\t1.HOME\n\n\t\t\t2.EXIT");
+  printf("\n\n\t\t\tENTER YOUR CHOICE: ");
   scanf("%d",&re);
   system("cls");
   return re;
@@ -46,12 +51,14 @@ int stati(int *a,int *b, int *c, int *d){
 int casting(int *a,int *b, int *c, int *d){
   int z,re;
   again:
-  printf("___##########_please choice your candidate_##########___");
-  printf("\n1.A");
-  printf("\n2.B");
-  printf("\n3.C");
-  printf("\n4.D");
-  printf("\nplease enter your choice: ");
+  printf("\t\t\t___##########_please choose your candidate_##########___");
+  printf("\n\n\t\t\t\t\t#####################");
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\t1.A         #");
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\t2.B         #");
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\t3.C         #");
+  printf("\n\t\t\t\t\t#                   #\n\t\t\t\t\t#\t4.D         #");
+  printf("\n\t\t\t\t\t#\t\t    #\n\t\t\t\t\t#####################");
+  printf("\n\n\t\t\tplease enter your choice: ");
   scanf("%d",&z);
 
   if (z == 1){
@@ -68,11 +75,11 @@ int casting(int *a,int *b, int *c, int *d){
   }
   else {
     system("cls");
-    printf("Error: invalid choice\n");
+    printf("\n\tError: invalid choice\n\a");
     goto again;
   }
-  printf("1.HOME\n2.EXIT");
-  printf("\nENTER YOUR CHOICE: ");
+  printf("\n\n\t\t\t1.HOME\n\n\t\t\t2.EXIT");
+  printf("\n\n\t\t\tENTER YOUR CHOICE: ");
   scanf("%d",&re);
   system("cls");
   return re;
@@ -85,12 +92,15 @@ int main(){
   a = b = c = d = 0;
   char pass[8];
   againb:
-  printf("___##########_wealcome to voting 2022_##########___");
-  printf("\n1.cast the vote");
-  printf("\n2.find the vote count");
-  printf("\n3.find the leading candidate");
-  printf("\n4.exit");
-  printf("\nplease enter your choice: ");
+  //MAIN MANU......
+  printf("\t\t\t\t\t___##########_wealcome to voting 2022_##########___");
+  printf("\n\n\t\t\t\t\t######################################################");
+  printf("\n\t\t\t\t\t#                                                    #\n\t\t\t\t\t#\t1.cast the vote                              #");
+  printf("\n\t\t\t\t\t#                                                    #\n\t\t\t\t\t#\t2.find the vote count(admins only)           #");
+  printf("\n\t\t\t\t\t#                                                    #\n\t\t\t\t\t#\t3.find the leading candidate(admins only)    #");
+  printf("\n\t\t\t\t\t#                                                    #\n\t\t\t\t\t#\t4.exit                                       #");
+  printf("\n\t\t\t\t\t#                                                    #\n\t\t\t\t\t######################################################");
+  printf("\n\n\t\t\t\t\tplease enter your choice: ");
   scanf("%d",&x);
   system("cls");
   if (x == 1){
@@ -101,7 +111,8 @@ int main(){
   }
   else if(x == 2){
     start:
-    printf("\n/@/@/@Enter password/@/@/@/\npassword: ");
+    //PASSWORD IS shadow
+    printf("\n\n\t\t\t/@/@/@Enter password/@/@/@/\n\n\t\t\tpassword: ");
     scanf("%s",pass);
     if((strcmp(pass,"shadow"))==0){
       system("cls");
@@ -112,7 +123,7 @@ int main(){
     }
     else{
       system("cls");
-      printf("1.Try again\n2.Home\n3.Exit\nEnter your choce: ");
+      printf("\n\n\t\t\t1.Try again\n\n\t\t\t\a2.Home\n\n\t\t\t3.Exit\n\n\t\t\tEnter your choce: ");
       scanf("%d",&j);
       if(j == 1){
         goto start;
@@ -125,18 +136,19 @@ int main(){
   }
   else if(x == 3){
     start2:
-    printf("\n/@/@/@Enter password/@/@/@/\npassword: ");
+    //PASSWORD IS shadow
+    printf("\n\n\t\t\t/@/@/@Enter password/@/@/@/\n\n\t\t\tpassword: ");
     scanf("%s",pass);
     if((strcmp(pass,"shadow"))==0){
       system("cls");
-      int nd3 = stati(&a,&b,&c,&d);
+      int nd3 = leading(&a,&b,&c,&d);
       if (nd3 == 1){
         goto againb;
       }
     }
     else{
       system("cls");
-      printf("1.Try again\n2.Home\n3.Exit\nEnter your choce: ");
+      printf("\n\n\t\t\t1.Try again\n\n\t\t\t\a2.Home\n\n\t\t\t3.Exit\n\n\t\t\tEnter your choce: ");
       scanf("%d",&j);
       if(j == 1){
         goto start2;
@@ -147,10 +159,10 @@ int main(){
     }
   }
   else if(x == 4){
-    printf("_#_#_#_THANKS_FOR_VOTING_#_#_#_");
+    printf("\n\n\t\t\t_#_#_#_THANKS_FOR_VOTING_#_#_#_");
   }
   else{
-    printf("Error: invalid choice....\n\n");
+    printf("\n\n\t\t\tError: invalid choice....\n\a\n");
     goto againb;
   }
   return 0;
