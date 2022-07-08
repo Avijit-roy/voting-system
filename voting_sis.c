@@ -24,7 +24,7 @@ int leading(int *a,int *b, int *c, int *d){
   printf("\n\n\t\t\t1.HOME\n\n\t\t\t2.EXIT");
   printf("\n\n\t\t\tENTER YOUR CHOICE: ");
   scanf("%d",&re);
-  system("cls");
+  system("clear");
   return re;
 }
 
@@ -42,7 +42,7 @@ int stati(int *a,int *b, int *c, int *d){
   printf("\n\n\t\t\t1.HOME\n\n\t\t\t2.EXIT");
   printf("\n\n\t\t\tENTER YOUR CHOICE: ");
   scanf("%d",&re);
-  system("cls");
+  system("clear");
   return re;
 }
 
@@ -74,14 +74,14 @@ int casting(int *a,int *b, int *c, int *d){
     *d += 1;
   }
   else {
-    system("cls");
+    system("clear");
     printf("\n\tError: invalid choice\n\a");
     goto again;
   }
   printf("\n\n\t\t\t1.HOME\n\n\t\t\t2.EXIT");
   printf("\n\n\t\t\tENTER YOUR CHOICE: ");
   scanf("%d",&re);
-  system("cls");
+  system("clear");
   return re;
 }
 
@@ -102,7 +102,7 @@ int main(){
   printf("\n\t\t\t\t\t#                                                    #\n\t\t\t\t\t######################################################");
   printf("\n\n\t\t\t\t\tplease enter your choice: ");
   scanf("%d",&x);
-  system("cls");
+  system("clear");
   if (x == 1){
     int nd1 = casting(&a,&b,&c,&d);
     if (nd1 == 1){
@@ -115,14 +115,14 @@ int main(){
     printf("\n\n\t\t\t/@/@/@Enter password/@/@/@/\n\n\t\t\tpassword: ");
     scanf("%s",pass);
     if((strcmp(pass,"shadow"))==0){
-      system("cls");
+      system("clear");
       int nd2 = stati(&a,&b,&c,&d);
       if (nd2 == 1){
         goto againb;
       }
     }
     else{
-      system("cls");
+      system("clear");
       printf("\n\n\t\t\t1.Try again\n\n\t\t\t\a2.Home\n\n\t\t\t3.Exit\n\n\t\t\tEnter your choce: ");
       scanf("%d",&j);
       if(j == 1){
@@ -140,14 +140,14 @@ int main(){
     printf("\n\n\t\t\t/@/@/@Enter password/@/@/@/\n\n\t\t\tpassword: ");
     scanf("%s",pass);
     if((strcmp(pass,"shadow"))==0){
-      system("cls");
+      system("clear");
       int nd3 = leading(&a,&b,&c,&d);
       if (nd3 == 1){
         goto againb;
       }
     }
     else{
-      system("cls");
+      system("clear");
       printf("\n\n\t\t\t1.Try again\n\n\t\t\t\a2.Home\n\n\t\t\t3.Exit\n\n\t\t\tEnter your choce: ");
       scanf("%d",&j);
       if(j == 1){
