@@ -1,0 +1,49 @@
+# Build artifacts and compiled files
+build/
+*.o
+*.a
+*.so
+*.exe
+*.dll
+
+# Executables
+voting_system
+voting_system.exe
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# Debugging files
+*.gdb
+*.dSYM/
+.gdbinit
+
+# CMake files (if using CMake)
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+Makefile.user
+
+# Dependency files
+*.depend
+*.d
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+.directory
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Log files
+*.log
